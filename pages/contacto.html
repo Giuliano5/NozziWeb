@@ -40,18 +40,26 @@
     </nav>
   </header>   
  
- <form>
-        <textarea>Nombre/Empresa</textarea>
-        <textarea>Asunto</textarea>
-        <textarea>Correo Electrónico</textarea>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nombre</label>
+      <input type="name" class="form-control" id="Nombre" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+    <label for="exampleInputEmail1" class="form-label">Consulta</label>
+    <div class="input-group">
+      <textarea class="form-control text-area" aria-label="With textarea"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary boton">Enviar</button>
+  </form>
 
-        <input type="submit"
-        value="Enviar Formulario"/>
-        <input type="reset"
-        value="Limpiar Formulario"/>
-        <input type="button"
-        value="Sin Acciones"/>
- </form>
+
  <footer>
   <div class="footer-top">
     <div>
